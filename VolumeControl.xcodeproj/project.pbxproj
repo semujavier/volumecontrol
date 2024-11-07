@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		F571BBC42CDCD3220072124D /* VolumeControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumeControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F571BBD52CDCD3710072124D /* VolumeControlView */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = VolumeControlView; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +33,7 @@
 		F571BBBB2CDCD3220072124D = {
 			isa = PBXGroup;
 			children = (
+				F571BBD52CDCD3710072124D /* VolumeControlView */,
 				F571BBC62CDCD3220072124D /* VolumeControl */,
 				F571BBC52CDCD3220072124D /* Products */,
 			);
