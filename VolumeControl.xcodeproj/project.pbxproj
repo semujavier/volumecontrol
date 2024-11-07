@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F571BBD82CDCD72D0072124D /* VolumeControlView in Frameworks */ = {isa = PBXBuildFile; productRef = F571BBD72CDCD72D0072124D /* VolumeControlView */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F571BBC42CDCD3220072124D /* VolumeControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumeControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F571BBD52CDCD3710072124D /* VolumeControlView */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = VolumeControlView; sourceTree = "<group>"; };
@@ -24,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F571BBD82CDCD72D0072124D /* VolumeControlView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +40,7 @@
 			children = (
 				F571BBD52CDCD3710072124D /* VolumeControlView */,
 				F571BBC62CDCD3220072124D /* VolumeControl */,
+				F571BBD62CDCD72D0072124D /* Frameworks */,
 				F571BBC52CDCD3220072124D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +51,13 @@
 				F571BBC42CDCD3220072124D /* VolumeControl.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F571BBD62CDCD72D0072124D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -67,6 +80,7 @@
 			);
 			name = VolumeControl;
 			packageProductDependencies = (
+				F571BBD72CDCD72D0072124D /* VolumeControlView */,
 			);
 			productName = VolumeControl;
 			productReference = F571BBC42CDCD3220072124D /* VolumeControl.app */;
@@ -326,6 +340,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F571BBD72CDCD72D0072124D /* VolumeControlView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VolumeControlView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F571BBBC2CDCD3220072124D /* Project object */;
 }

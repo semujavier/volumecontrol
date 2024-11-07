@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+import VolumeControlView
 
 struct ContentView: View {
+    @State private var volume: Double = 0.5
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            VolumeControlView(totalBars: 20, volume: $volume)
+                .filledColor(.red)
+                .frame(width: 100, height: 500)
+            Text("Volume: \(volume)")
         }
         .padding()
     }
@@ -22,3 +25,4 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
