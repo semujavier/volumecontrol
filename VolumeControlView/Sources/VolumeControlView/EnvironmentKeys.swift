@@ -8,6 +8,6 @@ import SwiftUI
 
 extension EnvironmentValues {
     @Entry var filledColor: Color = .accentColor
-    @Entry var defaultValue: Color = .secondary
+    @Entry var unfilledColor: Color = .secondary
     
 }
