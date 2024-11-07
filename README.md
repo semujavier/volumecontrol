@@ -13,8 +13,9 @@ The `VolumeControlView` component is a highly flexible SwiftUI view for visualiz
 ### Key Features
 
 - **Customizable Bar Count**: You can set the number of bars to display in the view, allowing flexible volume granularity.
-- **Volume Range from 0% to 100%**: The volume level can range from 0 (mute) to 1 (full volume) and updates interactively as the user adjusts it.
-- **Customizable Colors**: Modify the colors of the filled and unfilled bars using two built-in modifiers.
+- **Volume Range from 0% to 100%**: The volume level can range from 0 (mute) to 1 (full volume) and updates interactively as the user adjusts it. You can also update by using its specific method.
+  - `setVolume(_:)`: Set volume manually.
+- **Customizable Colors**: Modify the colors of the filled and unfilled bars using two built-in modifiers or the style object constructor.
   - `filledColor(_:)`: Set the color of the filled portion of the volume bar.
   - `unfilledColor(_:)`: Set the color of the unfilled portion of the volume bar.
 - **Binding Interface**: Use a `Binding` for the volume property, enabling real-time updates and allowing you to use `VolumeControlView` as a callback interface.

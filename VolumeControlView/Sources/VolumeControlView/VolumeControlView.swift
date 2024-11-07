@@ -41,6 +41,10 @@ public struct VolumeControlView: View {
         }
     }
     
+    public func setVolume(_ newVolume: Double) {
+        volume = min(max(newVolume, 0.0), 1.0)
+    }
+    
     func barHeight(in size: CGSize) -> CGFloat {
         (size.height - CGFloat(totalBars - 1) * 2) / CGFloat(totalBars)
     }
@@ -69,6 +73,15 @@ public struct VolumeControlView: View {
         return selectedBar
     }
     
+}
+
+public extension VolumeControlView {
+    init(style: VolumeControlStyle, volume: Binding<Double> = .constant(0)) {
+        self.totalBars = style.totalBars
+        self._volume = volume
+        self.filledColor = style.filledColor
+        self.unfilledColor = style.unfilledColor
+    }
 }
 
 public extension VolumeControlView {

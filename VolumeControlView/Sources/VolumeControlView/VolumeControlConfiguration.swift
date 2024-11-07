@@ -1,4 +1,13 @@
-public struct VolumeControlConfiguration {
+//
+//  VolumeControlConfiguration.swift
+//  VolumeControlView
+//
+//  Created by Javier Serrano Muñoz on 7/11/24.
+//
+
+import SwiftUI
+
+public struct VolumeControlStyle {
     var totalBars: Int
     var filledColor: Color
     var unfilledColor: Color
